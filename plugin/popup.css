@@ -1,0 +1,40 @@
+body {
+    font-family: arial;
+    font-size: 16pt;
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    width: 350px;
+    color: #0a4d08;
+}
+
+#welcome {
+    text-align: center;
+    color: #0a4d08;
+}
+
+#discovery {
+    font: 11px Arial;
+    text-decoration: none;
+    background-color:white;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 8px;
+  }
+
+#shell {
+    font: 11px Arial;
+    text-decoration: none;
+    background-color:white;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 8px;
+}

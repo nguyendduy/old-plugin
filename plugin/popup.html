@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      button {
-        height: 100px;
-        width: 100px;
-        outline: black;
-      }
-    </style>
-    <link href="popup.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <div> 
-      <h1 id="welcome"> Welcome </h1>
-      <!-- <button id="try">Try it</button> -->
-      
-    </div>
-    
-      <div>
-      Please enter your CyVerse ID:<br>
-      <input type="text" name="username" width=200px>
-      <br>
-      <input type="submit" value="Submit" id='submit' width="100%">
-</div>
 
-<p id="demo"></p>
-<p id="demo2"></p>
-<p id="demo3"></p>
-<a id='discovery' hidden href="https://sites.google.com/cs.unc.edu/cyversetutorial/discovery" target="_blank">Continue to Discovery</a>
-<a id='shell' hidden href="https://sites.google.com/cs.unc.edu/cyversetutorial/shell" target="_blank">Continue to Shell</a>   
-      
-      <br>
-      <br>
-    <button id="changeColor"></button>
-    <button id="download" value="download"> Download Log File </button>
-    <script src="popup.js"></script>
+<head>
+  <style>
+    button {
+      height: 100px;
+      width: 100px;
+      outline: black;
+    }
+  </style>
+  <link href="popup.css" rel="stylesheet" type="text/css">
+  <script src="popup.js"></script>
+</head>
 
-    <!-- <a id='discovery' hidden href="https://sites.google.com/cs.unc.edu/cyversetutorial/discovery" target="_blank">NEXT</a> -->
-  </body>
+<body>
+  <div>
+    <h1 id="welcome"> Welcome </h1>
+  </div>
+
+  <div>
+    Please enter your CyVerse ID:<br>
+    <input type="text" name="username" width=200px>
+    <br>
+    <input type="submit" value="Submit" id='submit' width="100%">
+  </div>
+
+  <p id="demo"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <a id='discovery' hidden href="https://sites.google.com/cs.unc.edu/cyversetutorial/discovery" target="_blank">Continue
+    to Discovery</a>
+  <a id='shell' hidden href="https://sites.google.com/cs.unc.edu/cyversetutorial/shell" target="_blank">Continue to
+    Shell</a>
+
+  <br>
+  <br>
+  <button id="download" value="download"> Download Log File </button>
+
+</body>
+
 </html>

@@ -1,19 +1,13 @@
-chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({color: '#3aa757'}, function() {
-      console.log("The color is green.");
+chrome.runtime.onMessage.addListener(
+    function (arg, sender) {
+        chrome.storage.local.get('time', function (result) {
+            if (result.time != null) {
+                chrome.downloads.download({
+                    url: "data:text/plain," + result.time,
+                    filename: "discovery.txt",
+                    conflictAction: "overwrite",
+                    saveAs: false,
+                });
+            }
+        });
     });
-
-    chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-        chrome.declarativeContent.onPageChanged.addRules([{
-          conditions: [new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: {hostEquals: 'sites.google.com'},
-          })
-          ],
-              actions: [new chrome.declarativeContent.ShowPageAction()]
-        }]);
-      });
-  });
-
-
-
- 

@@ -1,35 +1,32 @@
 {
-    "name": "Tutorial Tracking",
+    "name": "TUTORIAL",
     "version": "1.0",
     "description": "Tutorial navigation",
-    "permissions": ["activeTab","declarativeContent","storage","downloads","tabs"],
+    "permissions": [
+        "activeTab",
+        "declarativeContent",
+        "storage",
+        "downloads",
+        "tabs"
+    ],
     "background": {
-        "scripts": ["background.js"],
-        "persistent": false
+        "scripts": [
+            "background.js"
+        ]
     },
-    
     "page_action": {
-        "default_popup": "popup.html",
-        "default_icon": {
-            "16": "images/get_started16.png",
-            "32": "images/get_started32.png",
-            "48": "images/get_started48.png",
-            "128": "images/get_started128.png"
-          }
+        "default_popup": "popup.html"
     },
     "content_scripts": [
-    	{
-      		"matches": ["*://sites.google.com/*"],
-      		"all_frames": true,
-      		"js": ["popup.js"]
-    	}
-	],
-    "options_page": "options.html",
-    "icons": {
-        "16": "images/get_started16.png",
-        "32": "images/get_started32.png",
-        "48": "images/get_started48.png",
-        "128": "images/get_started128.png"
-    },
+        {
+            "matches": [
+                "*://sites.google.com/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "tester.js"
+            ]
+        }
+    ],
     "manifest_version": 2
-  }
+}

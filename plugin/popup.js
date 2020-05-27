@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('username').hidden = true;
     var text = document.getElementsByName('username')[0].value;
     document.getElementById('demo').innerHTML = text;
-    chrome.runtime.sendMessage({ 'message': 'saveUser', 'username': text });
+    // chrome.runtime.sendMessage({ 'message': 'saveUser', 'username': text });
     var grpnum = Math.random();
     if (grpnum < 0.5) {
       grpnum = 1;

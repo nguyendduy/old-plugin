@@ -55,13 +55,13 @@ chrome.runtime.onMessage.addListener(
 );
 
 
-chrome.runtime.onMessage.addListener(
-  function (arg, sender) {
-    if (arg.message === 'saveUser') {
-      chrome.storage.sync.set({ 'user': username }, function () { });
-    }
-  }
-);
+// chrome.runtime.onMessage.addListener(
+//   function (arg, sender) {
+//     if (arg.message === 'saveUser') {
+//       chrome.storage.sync.set({ 'user': username }, function () { });
+//     }
+//   }
+// );
 
 
 
